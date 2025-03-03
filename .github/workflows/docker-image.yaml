@@ -20,7 +20,7 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          IMAGE_NAME=ghcr.io/${{ github.repository_owner }}/alpine-apache2-utils
+          IMAGE_NAME=ghcr.io/${{ github.repository_owner }}/debian-apache2-utils
           IMAGE=$IMAGE_NAME:bookworm
           docker build -t $IMAGE .
           docker push $IMAGE
