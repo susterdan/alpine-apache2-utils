@@ -13,3 +13,5 @@ jobs:
     - uses: actions/checkout@v4
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag ghcr.io/susterdan/alpine-apache2-utils:alpine3.21.3-apache2utils2.4.62
+    - name: Push docker image
+      run: docker push ghcr.io/susterdan/alpine-apache2-utils:alpine3.21.3-apache2utils2.4.62
